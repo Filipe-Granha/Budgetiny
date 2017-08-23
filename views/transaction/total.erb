@@ -1,0 +1,50 @@
+<!-- page we get after clicking 'Your totals' on the navigation bar -->
+<div class="totals">
+<div class="total-spent">
+<h3>Your monthly budget is £ 8000</h3>
+</div>
+<div class="monthly-budget">
+<h3>Total spent so far: £ <%= @total %></h3>
+</div>
+<div class="available">
+<h3><%= @current_budget %></h3>
+</div>
+</div>
+
+<div class='container-tables-divs'>
+<div class="merchant-div"> 
+<h2 class='total-merchant'>Total spent per Merchant:</h2> 
+<table class="merchant-table">
+  <tr>
+    <th>Merchant</th>
+    <th>Total</th>
+  </tr>
+  <% for merchant in @merchants %>
+    <tr>
+      <td><%= merchant.name %></td>
+      <td><%= Transaction.total_spent_by_merchant(merchant.id) %></td>
+    </tr>
+  <% end %>
+</table>  
+</div>
+
+
+
+<div class='tag-div'>
+  <h1 class='total-tag'>Total spent per Tag:</h1> 
+  <table class="tag-table">
+    <tr>
+      <th>Tag</th>
+      <th></th>
+      <th>Total</th>
+    </tr>
+    <% for tag in @tags %>
+      <tr>
+        <td><%= tag.name %></td>
+        <td></td>
+        <td><%= Transaction.total_spent_by_tag(tag.id) %></td>
+      </tr>
+    <% end %>
+  </table>  
+</div>
+</div>

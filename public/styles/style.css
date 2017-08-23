@@ -1,0 +1,203 @@
+body {
+  font: Arial;
+  padding: 0px;
+  margin: 0px;
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background: white;
+  top: 0;
+  position: fixed;
+  text-decoration: none;
+}
+ 
+.logo {
+  float: left;
+  font-size: 12px;
+  margin-left: 20px;
+  background: white;
+}
+
+.nav {
+  float: right;
+  padding-right: 1px;
+  margin-right: 50px;
+  background: white;
+  text-decoration: none;
+  color: #efa91d;
+}
+
+.list {
+  list-style: none;
+  float: left;
+  margin-left: 15px;
+  padding-top: 15px;
+  background: white;
+  color: #efa91d;
+}
+
+a {
+  color: #efa91d;
+  font-weight: bold;
+}
+
+.yield {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  clear: left;
+  background: transparent;
+  margin-top: 100px;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #efefef;
+  text-align: center;
+  font-size: 10px;
+}
+
+.totals {
+  color:#177ab1;
+  margin-top: 10px;
+}
+
+.welcome {
+  color: #c82e14;
+  font-size: 80px;
+  padding-top: 50px;
+  font-style: italic;
+}
+
+.description{
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 18px;
+  color:gray;
+}
+
+
+.all-transactions {
+  color: #c82e14;
+  font-size: 40px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+.edit {
+  color: #c82e14;
+  font-size: 40px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+.new-transaction{
+  color: #c82e14;
+  font-size: 40px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+
+.saved{
+  color: #c82e14;
+  font-size: 40px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+
+.about{
+  color: #c82e14;
+  font-size: 40px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+.updated{
+  color: #c82e14;
+  font-size: 40px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+.thoughts{
+  color: #c82e14;
+  font-size: 40px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+.ask-for-update{
+  color: #c82e14;
+  font-size: 40px;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+
+.container-tables-divs{
+  width: 95%;
+  height: 400px;
+  margin: auto; /* centers */
+ 
+}
+
+.total-merchant{
+  color: #c82e14;
+  font-size: 30px;
+  padding-top: 2px;
+  font-style: italic;
+  text-align:left;
+  margin-left: 100px;
+}
+
+.merchant-div{
+  width: 500px;
+  float: left;
+}
+
+.tag-div{
+  width: 500px;
+  float:right;
+}
+
+.merchant-table {
+  margin-left: 200px;
+  border: 1px solid black;
+  width:1%;
+  white-space:nowrap;
+}
+
+.tag-table{
+  margin-left: 100px;
+  border: 1px solid black;
+}
+
+.total-tag{
+  color: #c82e14;
+  font-size: 30px;
+  padding-top: 10px;
+  font-style: italic;
+}
+
+.all-transactions-table{
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width:1%;
+  white-space:nowrap;
+
+}

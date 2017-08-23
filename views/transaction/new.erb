@@ -1,0 +1,41 @@
+<!-- when clicked on 'Add new Transaction', from the navigation bar -->
+
+<h2 class='new-transaction'>Add New Transaction</h2>
+<form method="POST" action="/transactions/saved">
+  <div class="form-wrapper">
+    
+    <div class="form-el">
+      <label for="amount">Amount:</label>
+      <input type="number" name="amount" id="amount" min="0" required/>
+    </div> 
+
+    <div class="form-el">
+      <label for="date">Date:</label>
+      <input type="date" name="date" id="date" required/>
+    </div>
+ 
+    <div class="form-el">
+      <label for="merchant">Select Merchant:</label> 
+      <select name="merchant_id" id="merchant_select">
+        <% @merchants.each do |merchant| %>
+            <option value=<%= merchant.id %>><%= merchant.name %></option>
+        <% end %>
+      </select>
+    </div>
+
+    <div class="form-el">
+      <label for="tag">Select Tag:</label> 
+      <select name="tag_id" id="tag_select">
+        <% @tags.each do |tag| %>
+            <option value=<%= tag.id %>><%= tag.name %></option>
+        <% end %>
+      </select>
+    </div>
+
+
+    <div class="form-el">
+      <input type="submit" value="Save Transaction"/>
+    </div>
+
+  </div>
+</form>

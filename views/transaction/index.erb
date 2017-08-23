@@ -1,0 +1,49 @@
+<!-- on the main page, table with all recorded transactions -->
+
+<div>
+  <h1 class="all-transactions">All transactions</h1>
+</div>  
+
+<div>
+
+  <% if @transactions.length > 0  %>
+
+  <table cellspacing="10" cellpadding="5" class='all-transactions-table'>
+   <tr "text-align: center">
+
+    <th>Amount</th>
+    <th>Day</th>
+    <th>Merchant</th>
+    <th>Tag</th>
+    <th></th>
+    <th></th>
+
+  </tr>
+
+  <% for transaction in @transactions %>
+  <tr "text-align: center">
+    <td><%= transaction.amount %></td>
+    <td><%= transaction.date %></td>
+    <td><%= transaction.merchant.name %></td>
+    <td><%= transaction.tag.name %></td>
+    <td style='white-space: nowrap'>
+      <form action="/transactions/<%= transaction.id %>/show" method="GET">
+       <input class="btn btn--danger" type="submit" value="Edit" />
+     </form>
+   </td>
+   <td>
+     <form action="/transactions/<%= transaction.id %>/delete" method="POST">
+       <input class="btn btn--danger" type="submit" value="Delete" />
+     </form></td>
+   </tr>
+
+   <% end %>
+   <% else %>
+   <br><br>
+   <%= "You currently have no transactions." %>
+   <% end %>
+ </table>
+ 
+</div>  
+
+
